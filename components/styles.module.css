@@ -1,0 +1,48 @@
+.navbar
+{
+  background: #ffffffaa;
+  backdrop-filter: blur(5px);
+  align-items: flex-end;
+  min-height: 49px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.link
+{
+  border: 0;
+  cursor: pointer;
+  color: #444;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #ffff;
+  transition-duration: .5s;
+}
+
+.link:hover
+{
+  border-bottom: 1px solid #010101;
+}
+
+.active
+{
+  border-bottom: 1px solid #010101;
+}
+
+.links_container
+{
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .links_container
+  {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 70%;
+  }
+}
